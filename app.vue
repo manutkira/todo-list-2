@@ -10,7 +10,7 @@
         class="form-control"
         @keyup.enter="submitTask"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">
+      <button id="btn-1" class="btn btn-warning rounded-0" @click="submitTask">
         Submit
       </button>
     </div>
@@ -22,7 +22,7 @@
         class="form-control"
         @keyup.enter="submitTask"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">
+      <button id="btn-1" class="btn btn-warning rounded-0" @click="submitTask">
         update
       </button>
     </div>
@@ -126,10 +126,18 @@ export default {
 .pointer {
   cursor: pointer;
 }
+
 .finished {
   text-decoration: line-through;
 }
+
 .normal {
   font-weight: 200;
+}
+#btn-1 {
+  transition: 0.7s ease;
+}
+#btn-1:hover {
+  background-color: aqua;
 }
 </style>
